@@ -3,14 +3,22 @@
 <html>
   <head>
    <style> 
+
    body {
     background-color: #f8f5f2;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
    }
 
    .name {
     color: #232323;
+    display: flex;
+    justify-content: center;
+   }
+
+   .banner {
+    display: flex;
+    justify-content: center;
    }
 
    
@@ -26,18 +34,51 @@
     height: 64px;
     object-fit: cover;
     border-radius: 64px;
+    justify-content: center;
+   }
+
+   .link {
+    background-color: #f45d48;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+   }
+
+   .link a {
+    color: #232323;
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 1;
+   }
+
+   .social a {
+    color: #078080;
+    text-decoration: none;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+
+   .items {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    max-width: 640px;
    }
    </style>
   </head>
 
   <body>
+    <div class="items">
+      <div class="banner">
+        <img class="profilepic" src="VU Headshot.jpeg">
+      </div>
 
-    <img class="profilepic" src="VU Headshot.jpeg">
-    <h3 class="name">
-      Virgilio Urmeneta
-    </h3>
+      <h2 class="name">
+        Virgilio Urmeneta
+       </h2>
 
-    <div>
+    <div class="social">
       <a href="https://www.linkedin.com/in/virgilio-urmeneta-54486ba0" target="_blank">
         LinkedIn
       </a>
@@ -51,43 +92,44 @@
       </a>
     </div>
 
-    <div>
+    <div class="name">
       A few of my favorite things...
     </div>
-
-    <div>
+    
+    <div class="link">
       <img class="thumbnail" src="book.jpg">
       <a href="https://www.goodreads.com/book/show/28920.A_Pale_View_of_Hills" target="_blank">
         Book: A Pale View of Hills
       </a>
     </div>
 
-    <div>
+    <div class="link">
       <img class="thumbnail" src="film.jpg">
       <a href="https://www.imdb.com/title/tt1065073/" target="_blank">
         Film: Boyhood
       </a>
     </div>
 
-    <div>
+    <div class="link">
       <img class="thumbnail" src="poem.jpg">
       <a href="https://formacion.intef.es/pluginfile.php/246851/mod_resource/content/2/Archivo%20zip/un_mar_de_fueguitos.html" target="_blank">
         Poem: Mar de Fueguitos
       </a>
     </div>
 
-    <div>
+    <div class="link">
       <img class="thumbnail" src="tvshow.jpg">
       <a href="https://www.sho.com/united-states-of-tara" target="_blank">
         TV Show: United States of Tara
       </a>
     </div>
 
-    <div>
+    <div class="link">
       <img class="thumbnail" src="song.jpg">
       <a href="https://open.spotify.com/track/3tynLfCMPGbkMKLm9p960T" target="_blank">
         Song: Old 45s
       </a>
     </div>
+  </div>
   </body>
 </html>
